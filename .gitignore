@@ -1,0 +1,16 @@
+build/
+cmake-build-*/
+.vs/
+.vscode/
+.idea/
+*.obj
+*.o
+*.exe
+*.lib
+*.pdb
+*.cubin
+*.ptx
+CMakeCache.txt
+CMakeFiles/
+.DS_Store
+Thumbs.db
