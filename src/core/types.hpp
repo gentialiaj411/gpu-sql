@@ -52,7 +52,7 @@ struct FixedString {
 inline size_t type_size(DataType type) {
     switch (type) {
         case DataType::INT32: return sizeof(int32_t);
-        case DataType:FLOAT32: return sizeof(float);
+        case DataType::FLOAT32: return sizeof(float);
         case DataType::STRING: return sizeof(FixedString);
     }
     throw std::runtime_error("Unkown data type");
@@ -100,11 +100,11 @@ enum class AggregateOp {
 
 inline std::string agg_to_string(AggregateOp op) {
     switch (op) {
-        case AggregateOp::COUNT: return "COUNT"
-        case AggregateOp::SUM: return "SUM"
-        case AggregateOp::MIN: return "MIN"
-        case AggregateOp::MAX: return "MAX"
-        case AggregateOp::AVG: return "AVG"
+        case AggregateOp::COUNT: return "COUNT";
+        case AggregateOp::SUM: return "SUM";
+        case AggregateOp::MIN: return "MIN";
+        case AggregateOp::MAX: return "MAX";
+        case AggregateOp::AVG: return "AVG";
     }
     return "?";
 }
