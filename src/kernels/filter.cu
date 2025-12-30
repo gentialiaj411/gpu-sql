@@ -1,4 +1,4 @@
-gi#include "filter.cuh"
+#include "filter.cuh"
 #include <vector>
 namespace gpusql {
 namespace cuda {

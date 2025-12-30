@@ -52,7 +52,7 @@ struct FixedString {
 inline size_t type_size(DataType type) {
     switch (type) {
         case DataType::INT32: return sizeof(int32_t);
-        case DataType:FLOAT32 return sizeof(float);
+        case DataType:FLOAT32: return sizeof(float);
         case DataType::STRING: return sizeof(FixedString);
     }
     throw std::runtime_error("Unkown data type");
@@ -60,7 +60,7 @@ inline size_t type_size(DataType type) {
 
 
 inline std::string type_name(DataType type) {
-    swtich (type) {
+    switch (type) {
         case DataType::INT32: return "INT32";
         case DataType::FLOAT32: return "FLOAT32";
         case DataType::STRING: return "STRING";
@@ -79,7 +79,7 @@ enum class CompareOp {
 };
 
 inline std::string op_to_string(CompareOp op) {
-    swtich(op) {
+    switch(op) {
         case CompareOp::EQ: return "=";
         case CompareOp::NE: return "!=";
         case CompareOp::LT: return "<";
